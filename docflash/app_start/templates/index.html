@@ -1,15 +1,16 @@
+{% load static %}
 <html>
     <head>
     <title>DocFlash - Votre compagnon d'études intelligent</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./9043602F-95E4-4682-BAE3-13919D669DA8_4_5005_c.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="{% static './9043602F-95E4-4682-BAE3-13919D669DA8_4_5005_c.ico' %}" type="image/x-icon">
     <!-- icon for android -->
-    <link rel="icon" type="image/png" sizes="32x32" href="./9043602F-95E4-4682-BAE3-13919D669DA8_4_5005_c.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="{% static './9043602F-95E4-4682-BAE3-13919D669DA8_4_5005_c.ico' %}">
     <!-- icon for apple -->
-    <link rel="apple-touch-icon" sizes="180x180" href="./9043602F-95E4-4682-BAE3-13919D669DA8_4_5005_c.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="{% static './9043602F-95E4-4682-BAE3-13919D669DA8_4_5005_c.ico' %}">
     <!-- icon for windows -->
-    <meta name="msapplication-TileImage" content="./9043602F-95E4-4682-BAE3-13919D669DA8_4_5005_c.ico">
+    <meta name="msapplication-TileImage" content="{% static './9043602F-95E4-4682-BAE3-13919D669DA8_4_5005_c.ico' %}">
     <!-- favicon for windows -->
     <meta name="msapplication-TileColor" content="#000000">
     <script src="https://cdn.tailwindcss.com"></script>
@@ -39,15 +40,15 @@
         <div class="container mx-auto px-6 py-3">
             <div class="flex justify-between items-center">
                 <a href="#" class="flex items-center">
-                    <img src="./DB4B3447-9109-409E-B907-6C4334CB3443_4_5005_c-removebg-preview.png" alt="DocFlash Logo" class="h-10 mr-3">
+                    <img src="{% static './DB4B3447-9109-409E-B907-6C4334CB3443_4_5005_c-removebg-preview.png' %}" alt="DocFlash Logo" class="h-10 mr-3">
                 </a>
                 <div class="hidden md:flex space-x-6">
                     <a href="#" class="text-gray-800 hover:text-orange-600 transition duration-300">Accueil</a>
-                    <a href="#" class="text-gray-800 hover:text-orange-600 transition duration-300">Cours</a>
-                    <a href="#" class="text-gray-800 hover:text-orange-600 transition duration-300">Ressources</a>
-                    <a href="#" class="text-gray-800 hover:text-orange-600 transition duration-300">Communauté</a>
+                    <a href="#Cours" class="text-gray-800 hover:text-orange-600 transition duration-300">Cours</a>
+                    <a href="#Ressources" class="text-gray-800 hover:text-orange-600 transition duration-300">Ressources</a>
+                    <a href="#Communauté" class="text-gray-800 hover:text-orange-600 transition duration-300">Communauté</a>
                 </div>
-                <a href="./login.html" class="bg-orange-500 text-white px-4 py-2 rounded-full hover:bg-orange-600 transition duration-300">
+                <a href="{% url 'login' %}" class="bg-orange-500 text-white px-4 py-2 rounded-full hover:bg-orange-600 transition duration-300">
                     Connexion
                 </a>
             </div>
@@ -58,12 +59,12 @@
         <div class="container mx-auto px-6 text-center">
             <h1 class="text-4xl md:text-6xl font-bold mb-4 text-gray-800 flex items-center flex-col ">Apprenez plus intelligemment avec
                <span class="mt-3">
-                <img src="./DB4B3447-9109-409E-B907-6C4334CB3443_4_5005_c-removebg-preview.png" 
+                <img src="{% static './DB4B3447-9109-409E-B907-6C4334CB3443_4_5005_c-removebg-preview.png' %}" 
                 alt="DocFlash Logo" class="h-30 mr-3">
               </span>
             </h1>
             <p class="text-xl mb-8 text-gray-600">Votre compagnon d'études personnalisé pour exceller dans vos études</p>
-            <a href="./login.html" class="bg-orange-500 text-white px-8 py-3 rounded-full text-lg font-semibold hover:bg-orange-600 transition duration-300 inline-block">
+            <a href="{% url 'login' %}" class="bg-orange-500 text-white px-8 py-3 rounded-full text-lg font-semibold hover:bg-orange-600 transition duration-300 inline-block">
                 Commencer gratuitement
             </a>
         </div>
@@ -73,7 +74,7 @@
         <section class="mb-16">
            
 
-            <section class="bg-white border-b py-8">
+            <section id="#Ressources" class="bg-white border-b py-8">
                 <div class="container max-w-5xl mx-auto m-8">
                     <h2 class="w-full  text-5xl font-bold leading-tight text-center text-gray-800">
                       Nos service
@@ -83,7 +84,7 @@
                     </div>
                     <div class="flex items-center flex-wrap">
                       <div class="w-5/6 sm:w-1/2 p-6">
-                        <h3 class="text-3xl font-semibold mb-2 text-orange-600">Livres en ligne</h3>
+                        <h3 id="#Cours" class="text-3xl font-semibold mb-2 text-orange-600">Livres en ligne</h3>
                     
                         <p class="text-gray-600 mb-8">
                           Accédez à une vaste bibliothèque de manuels et d'ouvrages de référence.<br />
@@ -93,12 +94,12 @@
                         </p>
                       </div>
                       <div class="w-full sm:w-1/2 p-6">
-                       <img src="./hero.png" alt="">
+                       <img src="{% static './hero.png' %}" alt="">
                       </div>
                     </div>
                     <div class="flex items-center flex-wrap flex-col-reverse sm:flex-row">
                       <div class="w-full sm:w-1/2 p-6 mt-6">
-                        <img src="./homework.png" alt="">
+                        <img src="{% static './homework.png' %}" alt="">
                       </div>
                       <div class="w-full sm:w-1/2 p-6 mt-6">
                         <div class="align-middle">
@@ -108,7 +109,7 @@
                           <p class="text-gray-600 mb-8">
                             Pratiquez avec des exercices adaptés à votre niveau et progressez rapidement.<br />
                             <br />
-                            <a href="./login.html" class="bg-black text-white px-4 py-2 rounded-full hover:bg-black-600 transition duration-300" href="https://undraw.co/">voir ici</a>
+                            <a href="{% url 'login' %}" class="bg-black text-white px-4 py-2 rounded-full hover:bg-black-600 transition duration-300" href="https://undraw.co/">voir ici</a>
                        
                           </p>
                         </div>
@@ -130,12 +131,12 @@
                         <p class="text-gray-600 mb-8">
                           Échangez avec d'autres étudiants et obtenez de l'aide sur vos questions. <br />
                           <br />
-                          <a href="./login.html" class="bg-black text-white px-4 py-2 rounded-full hover:bg-black-600 transition duration-300" href="https://undraw.co/">voir ici</a>
+                          <a href="{% url 'login' %}" class="bg-black text-white px-4 py-2 rounded-full hover:bg-black-600 transition duration-300" href="https://undraw.co/">voir ici</a>
                        
                         </p>
                       </div>
                       <div class="w-full sm:w-1/2 p-6">
-                       <img src="./Illustration2.webp" alt="">
+                       <img src="{% static './Illustration2.webp' %}" alt="">
                       </div>
                     </div>
                     <div class="flex flex-wrap items-center  flex-col-reverse sm:flex-row">
@@ -288,7 +289,7 @@
                           <circle cx="600.35" cy="480.68" r="11.968" fill="#ff6347" />
                         </svg>
                       </div>
-                      <div class="w-full sm:w-1/2 p-6 mt-6">
+                      <div id="#Communauté" class="w-full sm:w-1/2 p-6 mt-6">
                         <div class="align-middle">
                           <h3 class="text-3xl text-orange-600 font-bold leading-none mb-3">
                             Communauté d'entraide
@@ -296,7 +297,7 @@
                           <p class="text-gray-600 mb-8">
                             Échangez avec d'autres étudiants et obtenez de l'aide sur vos questions.<br />
                             <br />
-                            <a href="./login.html" class="bg-black text-white px-4 py-2 rounded-full hover:bg-black-600 transition duration-300" href="https://undraw.co/">voir ici</a>
+                            <a href="{% url 'login' %}" class="bg-black text-white px-4 py-2 rounded-full hover:bg-black-600 transition duration-300">voir ici</a>
                        
                           </p>
                         </div>
@@ -323,10 +324,10 @@
             <h2 class="text-3xl text-center  mb-4 text-gray-800">Prêt à booster vos résultats ?</h2>
             <p class="text-xl mb-8 text-center text-gray-600">Rejoignez des milliers d'étudiants qui excellent grâce à DocFlash</p>
             <span class="mt-3">
-              <img src="./DB4B3447-9109-409E-B907-6C4334CB3443_4_5005_c-removebg-preview.png" 
+              <img src="{% static './DB4B3447-9109-409E-B907-6C4334CB3443_4_5005_c-removebg-preview.png' %}"
               alt="DocFlash Logo" class="h-30 mr-3">
             </span><br>
-            <a href="./login.html" class="bg-orange-500 text-white px-8 py-3 rounded-full text-lg font-semibold hover:bg-orange-600 transition duration-300 inline-block">
+            <a href="{% url 'login' %}" class="bg-orange-500 text-white px-8 py-3 rounded-full text-lg font-semibold hover:bg-orange-600 transition duration-300 inline-block">
                 Essayer DocFlash gratuitement
             </a>
         </section>
@@ -378,7 +379,7 @@
                 </div>
                 <div class="w-full md:w-1/4 mb-6 md:mb-0">
                     <h3 class="text-xl font-semibold mb-2">Nous contacter</h3>
-                    <p class="text-gray-400"><a href="/cdn-cgi/l/email-protection" 
+                    <p class="text-gray-400"><a href=" " 
                       class="__cf_email__" data-cfemail="95e6e0e5e5fae7e1d5f1faf6f3f9f4e6fdbbf0f1e0">docflash@gmail.com</a></p>
                     <p class="text-gray-400">+242 06 454 74 69 </p>
                 </div>

@@ -1,0 +1,121 @@
+la liste de ecole qui en de eleve qui en 10 de moyenne sur le fichier resulte.json
+
+
+    "Ecoles": [
+        {
+            "Nom": "Ecole de l'eau",
+            "Code": "ECO",
+            "Adresse": "Rue de la Fontaine, 75001 Paris",
+            "Latitude": 48.86667,
+            "Longitude": 2.33333,
+            "Type": "Ecole",
+            "Statut": "Ouverte",
+            "NombreEleves": 10,
+            "NombreEcoles": 1,
+            "NombreClasses": 1,
+            "Ecoles": [
+                {
+                    "Nom": "Ecole de l'eau",
+                    "Code": "ECO",
+                    "Adresse": "Rue de la Fontaine, 75001 Paris",
+                    "Latitude": 48.86667,
+                    "Longitude": 2.33333,
+                    "Type": "Ecole",
+                    "Statut": "Ouverte",
+                    "NombreEleves": 10,
+                    "NombreEcoles": 1,
+                    "NombreClasses": 1,
+                    "Ecoles": []
+                }
+            ]
+        },
+        {
+            "Nom": "Ecole de la mer",
+            "Code": "ECM",
+            "Adresse": "Rue de la Fontaine, 75001 Paris",
+            "Latitude": 48.86667,
+            "Longitude": 2.33333,
+            "Type": "Ecole",
+            "Statut": "Ouverte",
+            "NombreEleves": 10,
+            "NombreEcoles": 1,
+            "NombreClasses": 1,
+            "Ecoles": [
+                {
+                    "Nom": "Ecole de la mer",
+                    "Code": "ECM",
+                    "Adresse": "Rue de la Fontaine, 75001 Paris",
+                    "Latitude": 48.86667,
+                    "Longitude": 2.33333,
+                    "Type": "Ecole",
+                    "Statut": "Ouverte",
+                    "NombreEleves": 10,
+                    "NombreEcoles": 1,
+                    "NombreClasses": 1,
+                    "Ecoles": []
+                }
+            ]
+        },
+        {
+            "Nom": "Ecole de la mer",
+            "Code": "ECM",
+            "Adresse": "Rue de la Fontaine, 75001 Paris",
+            "Latitude": 48.86667,
+            "Longitude": 2.33333,
+            "Type": "Ecole",
+            "Statut": "Ouverte",
+            "NombreEleves": 10,
+            "NombreEcoles": 1,
+            "NombreClasses": 1,
+            "Ecoles": [
+                {
+                    "Nom": "Ecole de la mer",
+                    "Code": "ECM",
+                    "Adresse": "Rue de la Fontaine, 75001 Paris",
+                    "Latitude": 48.86667,
+                    "Longitude": 2.33333,
+                    "Type": "Ecole",
+                    "Statut": "Ouverte",
+                    "NombreEleves": 10,
+                    "NombreEcoles": 1,
+                    "NombreClasses": 1,
+                    "Ecoles": []
+                }
+            ]
+        },
+        {
+            "Nom": "Ecole de la mer",
+            "Code": "ECM",
+            "Adresse": "Rue de la Fontaine, 75001 Paris",
+            "Latitude": 48.86667,
+            "Longitude": 2.33333,
+            "Type": "Ecole",
+            "Statut": "Ouverte",
+            "NombreEleves": 10,
+            "NombreEcoles": 1,
+            "NombreClasses": 1,
+            "Ecoles": [
+                {
+                    "Nom": "Ecole de la mer",
+                    "Code": "ECM",
+                    "Adresse": "Rue de la Fontaine, 75001 Paris",
+                    "Latitude": 48.86667,
+                    "Longitude": 2.33333,
+                    "Type": "Ecole",
+                    "Statut": "Ouverte",
+                    "NombreEleves": 10,
+                    "NombreEcoles": 1,
+                    "NombreClasses": 1,
+                    "Ecoles": []
+                }
+            ]
+        },
+        {
+            "Nom": "Ecole de la mer",
+            "Code": "ECM",
+            "Adresse": "Rue de la Fontaine, 75001 Paris",
+            "Latitude": 48.86667,
+            "Longitude": 2.33333,
+            
+
+
